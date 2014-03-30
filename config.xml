@@ -8,7 +8,7 @@
         Apache Cordova Team
     </author>
     <access origin="*" />
-    <preference name="phonegap-version" value="2.8.25" />
+    <preference name="phonegap-version" value="2.9.0" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
 </widget>
