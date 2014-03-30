@@ -1,0 +1,23 @@
+            .h{
+                color: red;
+                text-decoration: blink;
+                display: inline;
+            }
+            .i{
+                color: green;
+                display: inline;
+            }
+            .nh
+            {
+                font-style: italic;
+            }
+            .ni{
+                font-weight: bolder;
+            }
+            .toh 
+            {
+                font: 70%;
+            }
+            body {
+                padding-top: 50px;
+            }
