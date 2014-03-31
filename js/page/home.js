@@ -18,4 +18,11 @@ require(['jquery'],function($){
         {
             $('#dbStatus').html("database cannot work");
         }
+
+        $('#contactStatus').html("Contact cannot work");
+        if(navigator.contacts)
+        {
+            $('#contactStatus').html("Contact can work");
+        }
+        
 });
