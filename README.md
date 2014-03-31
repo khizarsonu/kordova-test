@@ -1,4 +1,0 @@
-kordova-test
-============
-
-cordovatest

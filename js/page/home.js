@@ -10,20 +10,12 @@ require(['jquery'],function($){
 
            $('#testp').toggle();
         });
-        document.addEventListener("menubutton",onmenukey, false);
-
-        function onmenukey()
+        if(window.openDatabase)
         {
-            function alertDismissed() {
-                // do something
-            }
-
-            navigator.notification.alert(
-                'You are the winner!',  // message
-                alertDismissed,         // callback
-                'Game Over',            // title
-                'Done'                  // buttonName
-            );
-            alert("menu button pressed");
+            $('#dbStatus').html("database can work");
+        }
+        else
+        {
+            $('#dbStatus').html("database cannot work");
         }
 });

@@ -13,6 +13,7 @@ requirejs.config({
         handlebars: 'lib/handlebars',        
         apps: 'lib/app',
         fastclick: 'lib/fastclick',
+        'log':'lib/log'
     },
     shim: {
         "jquery.bootstrap": {

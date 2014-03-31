@@ -2,7 +2,7 @@
  * Created by khizar on 3/29/14.
  */
 //this is
-require(['underscore.backbone'],function(Backbone){
+require(['underscore.backbone','log'],function(Backbone){
 
     var Router=Backbone.Router.extend({
         routes:{
@@ -37,14 +37,89 @@ require(['underscore.backbone'],function(Backbone){
         }
     });
 
+    var log=require('log');
     var router=new Router();
     router.on('route:chatIndex',function()
     {
-        console.log("router working fine");
+        log(this.routes[Backbone.history.fragment]);
     });
 
     router.on('route:welcome',function(){
-        console.log("welcome router is called");
+        log(this.routes[Backbone.history.fragment]);
+    });
+
+    router.on('route:termAndCondition',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:verifyNumber',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:restore',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:paymentInfo',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:welcome2App',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:setting',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:help',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:account',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:myProfile',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:chatSetting',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:notification',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:contacts',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:about',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:faq',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:systemStatus',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:privacy',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:changeNumber',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:deleteMyAccount',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:contactUs',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:chat',function(id){
+        log("chat:"+id);
+    }); //phoneNumber/id Argument
+    router.on('route:profile',function(id){
+        log("profile:"+id);
+    });//phoneNumber/id Argument
+    router.on('route:newGroup',function(){
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:newChat',function()
+    {
+        log(this.routes[Backbone.history.fragment]);
+    });
+    router.on('route:newBroadcastList',function(){
+        log(this.routes[Backbone.history.fragment]);
     });
 
     Backbone.history.start();
