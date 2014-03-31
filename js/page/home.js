@@ -24,5 +24,10 @@ require(['jquery'],function($){
         {
             $('#contactStatus').html("Contact can work");
         }
-        
+        $('#localStorageStatus').html("local storage will not work");
+
+        if(window.localStorage)
+        {
+            $('#localStorageStatus').html("local storage will work");
+        }
 });
