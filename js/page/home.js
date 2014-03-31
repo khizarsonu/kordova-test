@@ -26,7 +26,7 @@ require(['jquery'],function($){
         }
         $('#localStorageStatus').html("local storage will not work");
 
-        if(window.localStorage)
+        if(localStorage)
         {
             $('#localStorageStatus').html("local storage will work");
         }

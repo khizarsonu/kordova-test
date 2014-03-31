@@ -4,7 +4,7 @@
 define(['c/alert'],function (alrt){
     var log=function(value)
     {
-        alrt(value);
+        console.log(value);
     }
     return log;
 });
